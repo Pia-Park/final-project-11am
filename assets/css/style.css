@@ -1,0 +1,252 @@
+:root {
+    /* primary color*/
+    --clr-primary-1: #4B2D73;
+    --clr-primary-2: #C498FF;
+    --clr-primary-3: #7B55AD;
+    --clr-primary-4: #22113A;
+    /* darkest grey */
+    --clr-grey-1: #000000;
+    --clr-grey-2: #243a52;
+    --clr-grey-3: #324d67;
+    --clr-grey-4: #48647f;
+    /* grey used for paragraphs */
+    --clr-grey-5: #617d98;
+    --clr-grey-6: #829ab0;
+    --clr-grey-7: #9eb2c7;
+    --clr-grey-8: #bcccdc;
+    --clr-grey-9: #dae2ec;
+    --clr-grey-10: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary: "Raleway", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  /*
+  =============== 
+  Global Styles
+  ===============
+  */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--ff-primary);
+    background: var(--clr-grey-1);
+    color: var(--clr-grey-10);
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.5rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+  /*  global classes */
+  
+  .btn {
+    text-transform: uppercase;
+    background: var(--clr-grey-1);
+    color: var(--clr-white);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    /* font-weight: 700; */
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 1px solid var(--clr-grey-10);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .btn:hover {
+    color: var(--clr-primary-4);
+    background: var(--clr-grey-10);
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .section-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+
+  .nav_bar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_link {
+    display: block;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    color: var(--clr-primary-1);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .nav_link:hover {
+    color: var(--clr-grey-10);
+    padding-left: 1rem;
+  }
+
+  .nav_logo{
+      width: 6rem;
+      padding-left: 1rem;
+  }
+
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;  
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);  
+  }
+
+  li{
+      list-style: none;
+  }
+
+ header{
+     height: 100vh;
+     width: 100vw;
+ }
+
+  .main {     
+    width: 100vw;
+    height: 100vh;
+    background: url('https://pixabay.com/get/53e0d4444355af14f6d1867dda3536781537dee55754754a_1920.jpg') center center / cover no-repeat;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -4em 0 0 0;
+  }
+
+  .main_content {
+      position: relative;
+  }
+  .main_logo{
+      position: absolute;
+      width: 15rem;
+      top: -56%;
+      left: 12%;
+  }
+
+  .btn_full {
+      margin-top: 1em;
+  }
+
+  .about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6em 4em 4em 4em ;
+  }
+  .about_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about_text {
+      padding: 4em;
+  }
+
+  .our_designers {
+      display: flex;
+      flex-direction: row;
+      padding: 4em;
+      align-items: center;
+  }
+
+  .designers_title {
+      padding: 0 4em 0 0;
+  }
+
+  .our_portfolio {
+      padding: 4em;
+  }
+
+
+
+
+
+
+
+
