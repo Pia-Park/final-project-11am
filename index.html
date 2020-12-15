@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" type='text/css'>  
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
                 <title>11am - Web Design Company</title>
@@ -19,7 +18,9 @@
         <nav>
             <div class="nav_bar">
                 <div class="nav_logo">
-                    <img src="img/11am_logo_v.png" alt="11am logo" class="logo">
+                    <a href="#main_top">
+                        <img src="img/11am_logo_v.png" alt="11am logo" class="logo">
+                    </a>                        
                 </div>
                 <ul class="main-nav js--main-nav">
                     <li><a href="#aboutus" class="nav_link">ABOUT US</a></li>
@@ -83,12 +84,51 @@
             </div>
         </section>
 
+        <!-- inae checked -->
         <section class="contact_us" id="contact">
             <div class="contact_logo">
-                <img src="img/11am_logo_v.png" alt="11am logo">
+                <img src="img/11am_logo.png" alt="11am logo">
             </div>
             <div class="contact_label">
                 <h2>CONTACT</h2>
+                <div class="contact__input">
+                    <div class="contact_detail">
+                        <div class="label">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="label__input">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="contact_detail">
+                        <div class="label">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="label__input">
+                            <input type="text" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="contact_detail">
+                        <div class="label">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="label__input">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="submit">
+                        <label></label>
+                    </div>
+                    <div class="submit__btn">
+                      <input type="submit" value="SUBMIT">
+                    </div>
+                  </div>
             </div>
         </section>
 
