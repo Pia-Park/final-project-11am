@@ -119,7 +119,7 @@
     transition: var(--transition);
     font-size: 0.875rem;
     border: 1px solid var(--clr-grey-10);
-    cursor: pointer;
+    cursor: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .btn:hover {
@@ -127,23 +127,11 @@
     background: var(--clr-grey-10);
   }
 
-  /* .circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    background: var(--clr-primary-1);
-    opacity: 0.7;
-    border-radius: 80%;
-    backface-visibility: hidden;
-  } */
 
   .cursor {
     width: 3rem;
     height: 3rem;
-    border: 2px solid var(--clr-primary-2);
+    background-color: blueviolet;
     border-radius: 50%;
     position: absolute;
     z-index: 1000;
@@ -152,15 +140,9 @@
     transition: all 0.3s ease;
     transition-property: background-color, transform;
     transform-origin: 100% 100%;
-    backdrop-filter: sepia(20%);
     background-size: cover;
+    mix-blend-mode: difference;
 }
-
-    .cursor-grow {
-    transform: scale(2);
-    background-color: var(--clr-primary-1);
-    }
-
 
   /* main start */
   .section {
@@ -194,7 +176,7 @@
     letter-spacing: var(--spacing);
     transition: var(--transition);
     color: var(--clr-primary-1);
-    cursor: pointer;
+    cursor: none;
     font-size: 1rem;
   }
   .nav_link:hover {
