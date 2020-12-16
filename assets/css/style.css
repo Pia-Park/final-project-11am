@@ -43,6 +43,7 @@
     color: var(--clr-grey-10);
     line-height: 1.5;
     font-size: 0.875rem;
+    cursor: none;
   }
   ul {
     list-style-type: none;
@@ -125,6 +126,41 @@
     color: var(--clr-primary-4);
     background: var(--clr-grey-10);
   }
+
+  /* .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    background: var(--clr-primary-1);
+    opacity: 0.7;
+    border-radius: 80%;
+    backface-visibility: hidden;
+  } */
+
+  .cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--clr-primary-2);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background-color, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+}
+
+    .cursor-grow {
+    transform: scale(2);
+    background-color: var(--clr-primary-1);
+    }
+
 
   /* main start */
   .section {
@@ -216,7 +252,7 @@
       margin-top: 1em;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .section {
         padding: 3rem 0;
       }
@@ -227,13 +263,13 @@
       .section-center{
         width: 90vw;
         margin: 0 auto;
-        max-width: 1170px;
+        max-width: 800px;
       }
     
       .nav_bar{
         top: 0;
         left: 0;
-        width: 100%;
+        max-width: 100vw;
         padding: 1rem;
         z-index: 1;
         display: flex;
@@ -248,7 +284,7 @@
         letter-spacing: var(--spacing);
         transition: var(--transition);
         color: var(--clr-primary-1);
-        cursor: pointer;
+        /* cursor: pointer; */
         font-size: 0.8rem;
       }
       .nav_link:hover {
@@ -257,8 +293,7 @@
       }
     
       .nav_logo{
-          width: 6rem;
-          padding-left: 1rem;
+          width: 8rem;
       }
     
       .main-nav{
@@ -296,7 +331,98 @@
       }
       .main_logo{
           position: absolute;
-          width: 15rem;
+          width: 14rem;
+          top: -48%;
+          left: 14%;
+      }
+    
+      .btn_full {
+          margin-top: 1em;
+      }
+    
+ 
+  }
+
+  @media screen and (max-width: 800px) {
+    .section {
+        padding: 3rem 0;
+      }
+      .section-title{
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+      .section-center{
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+    
+      .nav_bar{
+        top: 0;
+        left: 0;
+        max-width: 100vw;
+        padding: 1rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    
+      .nav_link {
+        display: block;
+        padding: 1rem 1rem;
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+        transition: var(--transition);
+        color: var(--clr-primary-1);
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+      .nav_link:hover {
+        color: var(--clr-grey-10);
+        padding-left: 1rem;
+      }
+    
+      .nav_logo{
+          width: 0rem;
+      }
+    
+      .main-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;  
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);  
+      }
+    
+      li{
+          list-style: none;
+      }
+    
+     header{
+         height: 100vh;
+         width: 100vw;
+     }
+    
+      .main {     
+        width: 100vw;
+        height: 100vh;
+        background: url('https://pixabay.com/get/53e0d4444355af14f6d1867dda3536781537dee55754754a_1920.jpg') center center / cover no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .main_content {
+          position: relative;
+      }
+      .main_logo{
+          position: absolute;
+          width: 13rem;
           top: -56%;
           left: 12%;
       }
@@ -305,8 +431,10 @@
           margin-top: 1em;
       }
     
-   
+ 
   }
+
+  
 
   /* main end */
 
@@ -340,6 +468,8 @@
   .our_portfolio {
       padding: 4em;
   }
+
+
 
   /* contact us start */
 
