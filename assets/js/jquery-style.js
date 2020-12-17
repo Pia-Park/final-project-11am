@@ -1,5 +1,6 @@
 $(function() {
 
+    // slide for portfolio
     $('.arrow').click(function() {
         var $displaySlide = $('.active');
     
@@ -21,5 +22,16 @@ $(function() {
         }
 
     });
+})
 
+$(function() {
+
+    //modal for designers
+    $('.modal_view_all').click(function() {
+        $('#page_modal').fadeIn();
+    })
+
+    $('.close_modal').click(function() {
+        $('#page_modal').fadeOut();
+    })
 })

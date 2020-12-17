@@ -16,6 +16,9 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css"/>
+
         
         <div class="cursor"></div>
         <script type="text/javascript">
@@ -69,113 +72,186 @@
             </div>
         </section>
 
-        <section class="our_designers" id="designers">
-            <div class="designers_title">
-                <h2>OUR DESIGNERS</h2>
-                <h3>Make your dreams come true.</h3>
-                <p>professional our designers help you and they make your ideal web site. </p>
-                <a class="btn btn_full" href="#"><img src="img/viewall_btn_white.png" onmouseover="this.src='img/viewall_btn.png'" onmouseout="this.src='img/viewall_btn_white.png'" alt=""></a>
+ <!-- AMI part start -->
+
+ <section class="our_designers" id="designers">
+    <div class="designers_title">
+        <h2>OUR DESIGNERS</h2>
+        <h3>Make your dreams come true.</h3>
+        <p>professional our designers help you and they make your ideal web site. </p>
+        <!-- <a href="#"><img src="./img/viewall_btn_white.png" alt="view all" class="btn btn_full all"></a> -->
+       
+        <!-- class added -->
+
+        <a class="btn btn_full"><img class="modal_view_all" src="img/viewall_btn_white.png" onmouseover="this.src='./img/viewall_btn.png'" onmouseout="this.src='img/viewall_btn_white.png'" alt=""></a>
+    </div>
+
+    <div class="designers_profile">
+        <div class="profile pic0">
+            <img src="img/ivan.jpg" alt="DESIGNER IVAN" class="pics">
+            <h2>IVAN</h2>
+            <p>provide best web site blah provide best web site blah provide best web site blah </p>
+            <!-- <a href="#"><img src="./img/viewmore_btn_white.png" alt="view more" class="btn btn_full more"></a> -->
+            <a class="btn btn_full" href="pofiles0.html"><img src="img/viewmore_btn_white.png" onmouseover="this.src='./img/viewmore_btn.png'" onmouseout="this.src='img/viewmore_btn_white.png'" alt=""></a>
+        </div>
+
+        <div class="profile pic1">
+            <img src="img/inae.png" alt="DESIGNER INAE" class="pics">
+            <h2>INAE</h2>
+            <p>provide best web site blah provide best web site blah provide best web site blah </p>
+            <!-- <a href="#"><img src="./img/viewmore_btn_white.png" alt="view more" class="btn btn_full more"></a> -->
+            <a class="btn btn_full" href="#"><img src="img/viewmore_btn_white.png" onmouseover="this.src='./img/viewmore_btn.png'" onmouseout="this.src='img/viewmore_btn_white.png'" alt=""></a>
+        </div>
+
+        <div class="profile pic2">
+            <img src="img/ami.jpg" alt="DESIGNER AMI" class="pics">
+            <h2>AMI</h2>
+            <p>provide best web site blah provide best web site blah provide best web site blah </p>
+            <!-- <a href="#"><img src="./img/viewmore_btn_white.png" alt="view more" class="btn btn_full more"></a> -->
+            <a class="btn btn_full" href="#"><img src="img/viewmore_btn_white.png" onmouseover="this.src='./img/viewmore_btn.png'" onmouseout="this.src='img/viewmore_btn_white.png'" alt=""></a>
+        </div>
+
+        <div class="profile pic3">
+            <img src="img/miyu.jpg" alt="DESIGNER MIYU" class="pics">
+            <h2>MIYU</h2>
+            <p>provide best web site blah provide best web site blah provide best web site blah </p>
+            <!-- <a href="#"><img src="./img/viewmore_btn_white.png" alt="view more" class="btn btn_full more"></a> -->
+            <a class="btn btn_full" href="#"><img src="img/viewmore_btn_white.png" onmouseover="this.src='./img/viewmore_btn.png'" onmouseout="this.src='img/viewmore_btn_white.png'" alt=""></a>
+        </div>
+
+    </div>
+</section>
+      
+
+<!-- please add from here------------------------------------ -->
+<!-- modal start-->
+
+<div class="artist_modal" id="page_modal">
+    <div class="modal">
+        <div class="close_modal"> 
+            <i class="fa fa-3x fa-times"></i>
+        </div>
+        <div id="modal_page">
+            <div class="modal_profile pic0">
+                <img src="img/ivan.jpg" alt="DESIGNER IVAN" class="modal_pics">
+                <h2 class="modal_h2">IVAN</h2>
+                <p class="modal_p">provide best web site blah provide best web site blah provide best web site blah </p>
+                <a class="btn modal_view_more" href="pofiles0.html">VIEW MORE</a>
             </div>
-            <div class="designers_profile">
-                <div class="profile">
-                    <img src="img/ivan.jpg" alt="DESIGNER IVAN">
-                    <h2>IVAN</h2>
-                    <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                    <a class="btn btn_small" href="#">VIEW MORE</a>
-                </div>
+
+            <div class="modal_profile pic1">
+                <img src="img/inae.png" alt="DESIGNER INAE" class="modal_pics">
+                <h2 class="modal_h2">INAE</h2>
+                <p class="modal_p">provide best web site blah provide best web site blah provide best web site blah </p>
+                <a class="btn modal_view_more" href="#">VIEW MORE</a>
             </div>
-        </section>
 
-        <!-- portfolio----------------------------------------------- -->
-        <!-- please add from here------------------------------------ -->
-        <section class="our_portfolio" id="portfolio">
-            <h2 class="portfolio_top">PORTFOLIO</h2>
-            <div class="portfolio_row">
-                <!-- <button class="slide-prev"><img src="img/arrow-left.png" class="arrow arrow-prev"></button> -->
-                <img src="img/arrow-left.png" class="arrow arrow-prev">
+            <div class="modal_profile pic2">
+                <img src="img/ami.jpg" alt="DESIGNER AMI" class="modal_pics">
+                <h2 class="modal_h2">AMI</h2>
+                <p class="modal_p">provide best web site blah provide best web site blah provide best web site blah </p>
+                <a class="btn modal_view_more" href="#">VIEW MORE</a>
+            </div>
 
-                <ul class="portfolio_cards">
-                    <!-- portfolio 1 -->
-                        <li class="portfolio_card">
-                            <div class="portfolio_photo">
-                                <img src="img/amiyamanouchi.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">Ami Yamanouchi</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="portfolio.html"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>
-    
-                    <!-- portfolio 2 -->
-                        <li class="portfolio_card">
-                            <div class="portfolio_photo">
-                                <img src="img/tabitabi.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">tabi tabi</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>
-    
-                    <!-- portfolio 3 -->
-                        <li class="portfolio_card">
-                            <div class="portfolio_photo">
-                                <img src="img/cuisinebo.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">CUISINEBO</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>
-    
-                    <!-- portfolio 4 -->
-                        <li class="portfolio_card active">
-                            <div class="portfolio_photo">
-                                <img src="img/saltpepper.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">SALT & PEPPER</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>
-    
-                    <!-- portfolio 5 -->                   
-                        <li class="portfolio_card">
-                            <div class="portfolio_photo">
-                                <img src="img/pizza.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">PIZZA SHOP</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>
+            <div class="modal_profile pic3">
+                <img src="img/miyu.jpg" alt="DESIGNER MIYU" class="modal_pics">
+                <h2 class="modal_h2">MIYU</h2>
+                <p class="modal_p">provide best web site blah provide best web site blah provide best web site blah </p>
+                <a class="btn modal_view_more" href="#">VIEW MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-                    <!-- portfolio 6 -->                   
-                        <li class="portfolio_card">
-                            <div class="portfolio_photo">
-                                <img src="img/jadeandy.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio_text">
-                                <h3 class="portfolio_title">JADE & ANDY</h3>
-                                <p>provide best web site blah provide best web site blah provide best web site blah </p>
-                                <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
-                            </div>
-                        </li>                        
-                    </ul>
+<!-- modal end-->
 
-                    <!-- <button class="slide-next"><img src="img/arrow-right.png" class="arrow arrow-next"></button> -->
-                    <img src="img/arrow-right.png" class="arrow arrow-next">
+<!-- portfolio start -->
 
-                </div>
-        </section>
+<section class="our_portfolio" id="portfolio">
+    <h2 class="portfolio_top">PORTFOLIO</h2>
+    <div class="portfolio_row">
+        <img src="img/arrow-left.png" class="arrow arrow-prev">
 
-        <!-- please add to here--------------------------------------- -->
-        <!-- portfolio end-------------------------------------------- -->
+        <ul class="portfolio_cards">
+            <!-- portfolio 1 -->
+                <li class="portfolio_card">
+                    <div class="portfolio_photo">
+                        <img src="img/amiyamanouchi.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">Ami Yamanouchi</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="portfolio.html"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>
+
+            <!-- portfolio 2 -->
+                <li class="portfolio_card">
+                    <div class="portfolio_photo">
+                        <img src="img/tabitabi.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">tabi tabi</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>
+
+            <!-- portfolio 3 -->
+                <li class="portfolio_card">
+                    <div class="portfolio_photo">
+                        <img src="img/cuisinebo.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">CUISINEBO</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>
+
+            <!-- portfolio 4 -->
+                <li class="portfolio_card active">
+                    <div class="portfolio_photo">
+                        <img src="img/saltpepper.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">SALT & PEPPER</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>
+
+            <!-- portfolio 5 -->                   
+                <li class="portfolio_card">
+                    <div class="portfolio_photo">
+                        <img src="img/pizza.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">PIZZA SHOP</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>
+
+            <!-- portfolio 6 -->                   
+                <li class="portfolio_card">
+                    <div class="portfolio_photo">
+                        <img src="img/jadeandy.png" alt="portfolio">
+                    </div>
+                    <div class="portfolio_text">
+                        <h3 class="portfolio_title">JADE & ANDY</h3>
+                        <p>provide best web site blah provide best web site blah provide best web site blah </p>
+                        <a class="btn_small" href="#"><img src="img/viewmore_btn.png" class="portfolio_viewmore" alt="view more"></a>
+                    </div>
+                </li>                        
+            </ul>
+
+            <img src="img/arrow-right.png" class="arrow arrow-next">
+
+        </div>
+</section>
+
+<!-- portfolio end -->
 
         <!-- inae checked -->
         <section class="contact_us" id="contact">
