@@ -535,6 +535,14 @@
   .about_text {
       padding: 4em;
   }
+
+  .photos {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
   
 
   /* our-designers*/
@@ -548,14 +556,14 @@
   .designers_title {
       padding: 0 4em 0 0;
   }
+ /* ↓↓　AMI part Start */
 
-    /* ↓↓　AMI part Start */
-
+/* our-designers*/
 
 .designers_profile{
-  margin-left: 1em;
+  margin-left: 2em;
   display:flex;
-  overflow-x:scroll; 
+  overflow-x:scroll;
 }
 
 .designers_title p {
@@ -563,10 +571,9 @@
 }
 
 .profile{
-  margin: 1em;
+  margin: 2em;
   padding: 2em;
-  width: 20rem;
-  height: 35rem;
+  height: 100%;
 }
 
 .profile h2 {
@@ -577,10 +584,16 @@
   color: var(--clr-white);
 }
 
+.profile_content {
+  width: 15rem;
+}
+
 .pics {
-  position: relative;
-  height: 40vh;
-  width:20vw;
+  /* position: relative; */
+  /* height: 480px;
+  width:32vw; */
+  height: 42vh;
+  width: 100%;
 }
 
 
@@ -613,186 +626,6 @@
   background-blend-mode: darken;
 }
 
-@media screen and (max-width: 800px) {
-
-  .our_designers {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    align-items: center;
-  }
-
-    .designers_title {
-        padding: 0;
-    }
-
-      /* ↓↓　AMI part Start */
-
-    /* our-designers*/
-
-    .designers_profile{
-    display:flex;
-    margin: 2rem;
-    width: 95%;
-    overflow: hidden;
-    overflow-x: scroll;
-    }
-
-    .designers_title p {
-    color: var(--clr-white);
-    }
-
-    .profile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1em;
-    padding: 1em;
-    width: 14rem;
-    height: 26rem;
-    }
-
-    .profile h2 {
-    margin-top: 1em;
-    font-size: 1.5rem;
-    }
-
-    .profile p {
-    color: var(--clr-white);
-    line-height: 1rem;
-    margin-bottom: 0.5rem;
-    }
-
-    .pics {
-    position: relative;
-    height: 25vh;
-    width:23vw;
-    }
-
-    .profile a {
-      width: 90%;
-    }
-
-
-
-    .pic0{
-    background-image: url("../../img/ivan.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic1{
-    background-image: url("../../img/inae.png");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic2{
-    background-image: url("../../img/ami.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic3{
-    background-image: url("../../img/miyu.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-  .our_designers {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    align-items: center;
-  }
-
-    .designers_title {
-        padding: 0;
-    }
-
-      /* ↓↓　AMI part Start */
-
-    /* our-designers*/
-
-    .designers_profile{
-    display:flex;
-    width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
-    }
-
-    .designers_title p {
-    color: var(--clr-white);
-    }
-
-    .profile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 1em 0 0;
-    padding: 1em;
-    width: 20rem;
-    height: 26rem;
-    }
-
-    .profile h2 {
-    margin-top: 1em;
-    font-size: 1.5rem;
-    }
-
-    .profile p {
-    color: var(--clr-white);
-    line-height: 1rem;
-    margin-bottom: 0.5rem;
-    }
-
-    .pics {
-    position: relative;
-    height: 30vh;
-    width:30vw;
-    }
-
-    .profile a {
-      width: 95%;
-    }
-
-
-
-    .pic0{
-    background-image: url("../../img/ivan.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic1{
-    background-image: url("../../img/inae.png");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic2{
-    background-image: url("../../img/ami.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-
-    .pic3{
-    background-image: url("../../img/miyu.jpg");
-    background-size: cover;
-    background-color:rgba(66, 66, 66, 0.8);
-    background-blend-mode: darken;
-    }
-}
 
 
 /* profile.html */
@@ -813,13 +646,58 @@
 
 .our_portfolio{
   margin: 0 auto;
-  padding: 3rem;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .designers_profile{
+    margin-left: 2em;
+    display:flex;
+    overflow-x:scroll;
+    width: 50%;
+    height: 50%;    
+  }
+}
+
+
+/* profile.html */
+
+.profile_top{
+  margin: 0 auto;
+  max-width: 70%;
+  display: flex;
+}
+
+.profile_img, .profile_text {
+  margin: 4em 2em;
+}
+
+.profile_text p{
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .profile_top{
+    flex-direction: column;
+  }
+  .profile_img{
+    margin: 2rem auto;
+  }
+  .pics{
+    width: 350px;
+    height: 400px;
+  }
 }
 
 
 
- /* please add from here --------------------------------------*/
+
+/* please add from here --------------------------------------*/
+.our_portfolio{
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
 /* modal---------------------------------------- */
 #modal_page {
   display: flex;
@@ -1024,6 +902,10 @@
   height: 6rem;
   align-self: center;
   cursor: none;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
 }
 
 .arrow-prev {
@@ -1305,8 +1187,3 @@
   }
 
   /* contact us end */
-
-
-
-
-
