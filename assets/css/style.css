@@ -813,6 +813,7 @@
 
 .our_portfolio{
   margin: 0 auto;
+  padding: 3rem;
   text-align: center;
 }
 
@@ -1022,7 +1023,7 @@
   width: 3.5rem;
   height: 6rem;
   align-self: center;
-  cursor: pointer;
+  cursor: none;
 }
 
 .arrow-prev {
@@ -1153,8 +1154,10 @@
 }
 
 /* portfolio page----------------------------------- */
+
 #pf_contents{
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -1164,11 +1167,13 @@
 
 .pf_header>video {
   width: 100vw;
-  height: auto;
+  height: 100%;
 }
 
+
+
 .pf_content {
-  padding: 4rem 6rem;
+  padding: 1rem 6rem;
   /* max-width: 1170px; */
   display: grid;
   grid-template-columns: repeat(1fr);
@@ -1284,7 +1289,7 @@
   input[type=submit]{
     font-size: 1rem;
     border: 1px solid var(--clr-grey-10);
-    cursor: pointer;
+    cursor: none;
     color: var(--clr-white);
     background-color: #000000;
     margin-top: 1em;
@@ -1293,7 +1298,7 @@
   input[type=submit]:hover{
     font-size: 1rem;
     border: 1px solid var(--clr-grey-10);
-    cursor: pointer;
+    cursor: none;
     color: var(--clr-grey-1);
     background-color: var(--clr-white);
     margin-top: 1em;
