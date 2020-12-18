@@ -599,57 +599,47 @@
 
   }
 
-  /* our-designers*/
+  /* our designers css start ----> */
+
   .our_designers {
-      display: flex;
-      flex-direction: row;
-      padding: 4em;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
   }
 
-  .designers_title {
-      padding: 0 4em 0 0;
+  .designers_profile {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 2rem;
   }
- /* ↓↓　AMI part Start */
 
-/* our-designers*/
+  .profile {
+    display: block;
+    margin-right: 2rem;
+  }
 
-.designers_profile{
-  margin-left: 2em;
-  display:flex;
-  overflow-x:scroll;
-}
+  .profile_content {
+    width: 25vw;
+    padding: 2rem;
+  }
 
-.designers_title p {
-  color: var(--clr-white);
-}
+  .content_img {
+    padding-bottom: 2rem;
+  }
 
-.profile{
-  margin: 2em;
-  padding: 2em;
-  height: 100%;
-}
+  .pics_c {
+    height: 20vw;
+    object-fit: cover;
+  }
 
-.profile h2 {
-  margin-top: 1em;
-}
+  .content_text p{
+    color: var(--clr-white);
+  }
 
-.profile p {
-  color: var(--clr-white);
-}
 
-.profile_content {
-  width: 15rem;
-}
-
-.pics {
-  /* position: relative; */
-  /* height: 480px;
-  width:32vw; */
-  height: 42vh;
-  width: 100%;
-  object-fit: fill;
-}
 
 
 
@@ -681,62 +671,7 @@
   background-blend-mode: darken;
 }
 
-@media screen and (max-width: 800px) {
 
-    /* our-designers*/
-    .our_designers {
-      display: flex;
-      flex-direction: column;
-      padding: 2em;
-      align-items: center;
-    }
-
-  .designers_title h3 {
-    font-size: 1.2rem;
-  }
-  /* ↓↓　AMI part Start */
-
-  /* our-designers*/
-
-  .designers_profile{
-    /* display:flex; */
-    display: block;
-    margin: 2rem;
-    width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
-    }
-
-  .designers_title p {
-  color: var(--clr-white);
-  }
-
-  .profile{
-    display: block;
-    width: 25rem;
-    height: 42rem;
-    margin-left: 0;
-
-  }
-
-  .profile h2 {
-  margin-top: 1em;
-  }
-
-  .profile_content {
-  display: block;
-  width: 20rem;
-  }
-
-  .pics {
-    width: 90%;
-    height: auto;
-  }
-
-
-
-
-}
 
 /* profile.html */
 
@@ -793,12 +728,11 @@
   .profile_img{
     margin: 2rem auto;
   }
-  .pics{
+  /* .pics{
     width: 350px;
     height: 400px;
-  }
+  } */
 }
-
 
 
 
