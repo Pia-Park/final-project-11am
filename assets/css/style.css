@@ -167,6 +167,27 @@
   color: var(--clr-grey-1);
 }
 
+.list {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-white);
+  position: fixed;
+  left: 90%;
+  top: 73%;
+  text-align: center;
+  line-height: 3.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.list:hover {
+  background-color:  var(--clr-white);
+  color: var(--clr-grey-1);
+}
+
   /* main start */
   .section {
     padding: 5rem 0;
