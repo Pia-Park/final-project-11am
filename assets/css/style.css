@@ -258,6 +258,12 @@
       left: 12%;
   }
 
+  .main_logo:hover {
+    transform: scale(1.1);
+    -webkit-filter: opacity(.6) drop-shadow(0 0 0 purple);
+    filter: opacity(.6) drop-shadow(0 0 0 purple);
+  }
+
   .btn_full {
       margin-top: 1em;
   }
