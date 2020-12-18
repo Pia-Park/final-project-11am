@@ -6,6 +6,7 @@
     --clr-primary-2: #C498FF;
     --clr-primary-3: #7B55AD;
     --clr-primary-4: #22113A;
+    --clr-primary-5: #736783;
     /* darkest grey */
     --clr-grey-1: #000000;
     --clr-grey-2: #243a52;
@@ -81,7 +82,7 @@
   }
   p {
     margin-bottom: 1.25rem;
-    color: var(--clr-grey-5);
+    color: var(--clr-primary-5);
   }
   @media screen and (min-width: 800px) {
     h1 {
@@ -239,7 +240,6 @@
     width: 100vw;
     height: 100vh;
     background:url('main.jpg') center center / cover no-repeat;
-    /* background: url("/img/main.jpg") center center / cover no-repeat; */
     background-size: 80%;
     display: flex;
     flex-direction: column;
@@ -258,11 +258,9 @@
       left: 12%;
   }
 
-  .main_logo:hover {
+  /* .main_logo:hover {
     transform: scale(1.1);
-    -webkit-filter: opacity(.6) drop-shadow(0 0 0 purple);
-    filter: opacity(.6) drop-shadow(0 0 0 purple);
-  }
+  } */
 
   .btn_full {
       margin-top: 1em;
