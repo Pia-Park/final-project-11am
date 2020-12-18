@@ -576,7 +576,42 @@
     }
 
     .about_text {
-      padding: 4em;
+      padding: 5em;
+    }
+
+    .about_text h3 {
+      font-size: 1.2rem;
+    }
+  
+    .photos {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      overflow-x: scroll;
+      width: fit-content;
+      height: auto;
+    }
+
+    .about_photo img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 480px){
+
+    .about_us {
+      display: flex;
+      padding: 5rem 0 0 0;
+    }
+    .about_content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about_text {
+      padding: 2em;
     }
 
     .about_text h3 {
@@ -608,7 +643,7 @@
     padding: 4rem;
   }
 
-  .designers_profile {
+  .designers_profile1 {
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -639,10 +674,6 @@
     color: var(--clr-white);
   }
 
-
-
-
-
 .pic0{
   background-image: url("../../img/ivan.jpg");
   background-size: cover;
@@ -669,6 +700,87 @@
   background-size: cover;
   background-color:rgba(66, 66, 66, 0.8);
   background-blend-mode: darken;
+}
+
+@media screen and (max-width: 800px){
+  .our_designers {
+    display: flex;
+    flex-direction: column;    
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .our_designers h3 {
+    font-size: 1.2rem;
+  }
+
+  .designers_profile1 {
+    overflow: scroll;
+    max-width: 700px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .profile {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .profile_content {
+    width: 30vw;
+    padding: 1rem;
+  }
+
+  .content_img {
+    padding-bottom: 2rem;
+  }
+
+  .pics_c {
+    height: 25vw;
+    object-fit: cover;
+  }
+
+}
+
+
+@media screen and (max-width: 480px){
+  .our_designers {
+    display: flex;
+    flex-direction: column;    
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .our_designers h3 {
+    font-size: 1.2rem;
+  }
+
+  .designers_profile1 {
+    overflow: scroll;
+    max-width: 460px;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .profile {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .profile_content {
+    width: 45vw;
+    padding: 1rem;
+  }
+
+  .content_img {
+    padding-bottom: 1rem;
+  }
+
+  .pics_c {
+    height: 40vw;
+    object-fit: cover;
+  }
+
 }
 
 
@@ -702,36 +814,6 @@
     width: 50%;
     height: 50%;    
   }
-}
-
-
-/* profile.html */
-
-.profile_top{
-  margin: 0 auto;
-  max-width: 70%;
-  display: flex;
-}
-
-.profile_img, .profile_text {
-  margin: 4em 2em;
-}
-
-.profile_text p{
-  color: white;
-}
-
-@media screen and (max-width: 800px) {
-  .profile_top{
-    flex-direction: column;
-  }
-  .profile_img{
-    margin: 2rem auto;
-  }
-  /* .pics{
-    width: 350px;
-    height: 400px;
-  } */
 }
 
 
