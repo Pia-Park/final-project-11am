@@ -487,7 +487,23 @@
       color: var(--clr-white);
       position: fixed;
       left: 85%;
-      top: 90%;
+      top: 85%;
+      text-align: center;
+      line-height: 3.6rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .list {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background-color: var(--clr-primary-1);
+      color: var(--clr-white);
+      position: fixed;
+      left: 85%;
+      top: 75%;
       text-align: center;
       line-height: 3.6rem;
       font-size: 1rem;
